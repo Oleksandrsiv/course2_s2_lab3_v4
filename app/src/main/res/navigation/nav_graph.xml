@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.airlinelab3.ListFragment"
+        android:label="Список літаків"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/addAirplaneFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAirplaneFragment"
+        android:name="com.example.airlinelab3.AddEditAirplaneFragment"
+        android:label="Додати літак"
+        tools:layout="@layout/fragment_add_airplane">
+
+        <argument
+            android:name="airplaneId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>

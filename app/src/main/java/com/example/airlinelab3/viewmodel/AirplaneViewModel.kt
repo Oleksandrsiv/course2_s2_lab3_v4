@@ -32,7 +32,7 @@ class AirplaneViewModel(private val airplaneDao: AirplaneDao) : ViewModel() {
                     return@launch
                 }
 
-                // if validation passed, we can create the Airplane object
+                // if validation passed => create the Airplane object
                 val newAirplane = Airplane(
                     model = model,
                     capacity = capacityStr.toInt(),

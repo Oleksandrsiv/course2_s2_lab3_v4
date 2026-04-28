@@ -78,6 +78,16 @@ class AddEditAirplaneFragment : Fragment() {
                 return@setOnClickListener
             }
 
+            if (capacity == null) {
+                android.widget.Toast.makeText(requireContext(), "Введіть коректне число", android.widget.Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (capacity <= 0 || capacity > 1000) { // додамо реалістичний ліміт для літака
+                android.widget.Toast.makeText(requireContext(), "Місткість має бути від 1 до 1000", android.widget.Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (isEditMode) {
                 viewModel.updateAirplane(airplaneId, model, capacityText, manufacturer, airline)
             } else {

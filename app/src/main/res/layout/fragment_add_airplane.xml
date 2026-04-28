@@ -9,10 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Модель літака">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_model"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="50" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -20,11 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Місткість">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_capacity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -32,10 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Виробник">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_manufacturer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="50" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,10 +54,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Авіакомпанія">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_airline"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="50" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Space

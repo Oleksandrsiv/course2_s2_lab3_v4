@@ -83,7 +83,7 @@ class AddEditAirplaneFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            if (capacity <= 0 || capacity > 1000) { // додамо реалістичний ліміт для літака
+            if (capacity <= 0 || capacity > 1000) {
                 android.widget.Toast.makeText(requireContext(), "Місткість має бути від 1 до 1000", android.widget.Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
